@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin page</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="admin">
+    <div id="header">
+      <div class="logo">
+        <img src="graphics/transparent logo.png" alt="" srcset="" />
+      </div>
+      <div class="menu-admin">
+        <a href="/index.html"><i class="fa-solid fa-house-chimney"></i></a>
+      </div>
+    </div>
+
+    <div class="display-add-form">
+      <button id="add-product-section-button">
+        <i class="fa-solid fa-circle-plus"></i>
+        Display new product form
+      </button>
+    </div>
+
+    <div class="admin-container">
+      <div class="confirmation-message"></div>
+      <div class="item-form hide-new-product-form">
+        <h3>Add new product</h3>
+
+        <div class="input-item-form">
+          <div class="item">
+            <label for="label-item">Product name:</label>
+            <input type="text" placeholder="name..." id="name" />
+          </div>
+
+          <div class="item">
+            <label for="label-item">Product price:</label>
+            <input type="text" placeholder="$$..." id="price" />
+          </div>
+
+          <div class="item">
+            <label for="label-item">Product picture:</label>
+            <input type="text" placeholder="image URL..." id="image" />
+          </div>
+
+          <div class="item">
+            <label for="label-item">Product description:</label>
+            <input
+              type="text"
+              placeholder="pair of gold and silver accessories...."
+              id="description"
+            />
+          </div>
+
+          <div class="item">
+            <label for="label-item">Product specification:</label>
+            <input
+              type="text"
+              placeholder="material, cut, gem...."
+              id="specification"
+            />
+          </div>
+          <div class="item">
+            <label for="category">Select category:</label>
+            <select name="category" id="category">
+              <option value="none" selected disabled hidden>
+                Select an Option
+              </option>
+              <option value="Earrings">Earrings</option>
+              <option value="Necklaces">Necklaces</option>
+              <option value="Bracelets">Bracelets</option>
+              <option value="Rings">Rings</option>
+              <option value="Watches">Watches</option>
+              <option value="Body jewellery">Body jewellery</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="subcategory">Select category:</label>
+            <select name="subcategory" id="subcategory">
+              <option value="none" selected disabled hidden>
+                Select an Option
+              </option>
+              <option value="Stud Earrings">Stud Earrings</option>
+              <option value="Hoop Earrings">Hoop Earrings</option>
+              <option value="Pendant Neckless">Pendant Neckless</option>
+              <option value="Classic Neckless">Classic Neckless</option>
+              <option value="Chain Bracelets">Chain Bracelets</option>
+              <option value="Band rings">Band rings</option>
+              <option value="Engagement Rings">Engagement Rings</option>
+              <option value="Women's Watches">Women's Watches</option>
+              <option value="Men's Watches">Men's Watches</option>
+              <option value="Body jewellery">Body jewellery</option>
+            </select>
+          </div>
+          <div class="item">
+            <label for="label-item">Product stock:</label>
+            <input
+              type="text"
+              placeholder="available stock..."
+              id="admin-stock"
+            />
+          </div>
+          <div>
+            <button id="add-button">Add product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Products List</h2>
+
+    <div class="products-list">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            <th scope="col">Description</th>
+            <th scope="col">Specification</th>
+            <th scope="col">Category</th>
+            <th scope="col">Subcategory</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Edit</th>
+          </tr>
+        </thead>
+        <tbody class="admin-table"></tbody>
+      </table>
+    </div>
+
+    <script type="module" src="./src/admin.js"></script>
+  </body>
+</html>

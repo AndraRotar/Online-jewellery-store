@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product details</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <img src="graphics/transparent logo.png" alt="" srcset="" />
+      </div>
+
+      <!-- Menu -->
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+
+        <div class="dropdown-categories">
+          <button class="dropdown-button">
+            Products <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="dropdown-products">
+            <a href="categories/earrings-category.html">Earrings</a>
+            <a href="categories/necklaces-category.html">Necklaces</a>
+            <a href="categories/bracelets-category.html">Bracelets</a>
+            <a href="categories/rings-category.html">Rings</a>
+            <a href="categories/watches-category.html">Watches</a>
+            <a href="categories/body-jewellery-category.html">Body jewellery</a>
+          </div>
+        </div>
+
+        <a href="/contact.html">Contact </a>
+
+        <div class="menu-cart">
+          <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+
+      <!-- Phone menu -->
+      <div class="side-menu" id="side-menu">
+        <button class="side-menu-buttons" id="side-menu-buttons">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x"></i>
+        </button>
+
+        <div class="sidebar-content">
+          <ul class="categories">
+            <li class="category">
+              <a href="categories/earrings-category.html" class="category-link">
+                Earrings
+              </a>
+            </li>
+
+            <li>
+              <a href="categories/necklaces-category.html" class="category-link"
+                >Necklaces</a
+              >
+            </li>
+
+            <li>
+              <a href="categories/bracelets-category.html" class="category-link"
+                >Bracelets</a
+              >
+            </li>
+
+            <li>
+              <a href="categories/rings-category.html" class="category-link"
+                >Rings</a
+              >
+            </li>
+
+            <li>
+              <a href="categories/watches-category.html" class="category-link"
+                >Watches</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="categories/body-jewellery-category.html"
+                class="category-link"
+                >Body jewellery</a
+              >
+            </li>
+          </ul>
+
+          <div class="side-bar-bottom">
+            <ul>
+              <li><a href="index.html" class="category-link">Home</a></li>
+              <li><a href="about.html" class="category-link">About us</a></li>
+              <li><a href="contact.html" class="category-link">Contact</a></li>
+              <li>
+                <a href="/cart.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-details"></div>
+
+    <div id="footer-details">
+      <div id="footer-1">
+        <p>Client Care</p>
+        <ul>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Track Your Order</a></li>
+          <li><a href="">Product Care & Repair</a></li>
+          <li><a href="">Frequently Asked Questions</a></li>
+          <li><a href="">Shipping & Returns</a></li>
+          <li><a href="">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div id="footer-2">
+        <p>
+          Subscribe to get special offers, free giveaways, and
+          once-in-a-lifetime deals.
+        </p>
+        <div class="subscribe">
+          <input
+            type="email"
+            value=""
+            placeholder="Enter your email"
+            id="subscribe-email"
+          /><i class="fa-solid fa-envelope"></i>
+          <p class="subscribe-email-confirmation-msg"></p>
+        </div>
+        <div class="social-media">
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+        <p class="copyright">
+          Copyright &#169; 2022 GoldenEve. All rights reserved.
+        </p>
+      </div>
+
+      <div id="footer-3">
+        <p>Legal</p>
+        <ul>
+          <li><a href="">Website Terms Of Use</a></li>
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Imprint</a></li>
+          <li><a href="">Tax Strategy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script type="module" src="./src/details.js"></script>
+  </body>
+</html>
